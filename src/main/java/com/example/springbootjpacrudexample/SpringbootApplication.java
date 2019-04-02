@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
-public class SpringbootApplication implements CommandLineRunner {
+public class SpringbootApplication {
 
 	@GetMapping("/api/test")
 	public String getProducts() {
