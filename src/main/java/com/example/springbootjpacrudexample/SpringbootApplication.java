@@ -8,9 +8,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.springbootjpacrudexample.entities.Product;
 import com.example.springbootjpacrudexample.repositories.ProductRepository;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class SpringbootApplication implements CommandLineRunner {
+
+	@GetMapping("/api/test")
+	public String getProducts() {
+		return "Hello World";
+	}
 
 	@Autowired
 	ProductRepository productRepository;
